@@ -1,0 +1,210 @@
+/*....................Container0...............................*/
+.container0{
+    position: sticky;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    background: #eee;
+    margin-bottom: 20px;
+}
+.container-p{
+    padding: 15px 0;
+    font-size: 14px;
+    color: #333;
+}
+.container-box{
+    border-radius: 4px;
+}
+.container-box .box-header{
+    width: 100%;
+    background: #111;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px 0;
+    padding-left: 15px;
+    padding-right: 25px;
+    color: #fff;
+}
+.box-header2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+.box-header h2{
+    font-family: sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+.box-header h4{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.box-content,.box-content2{
+    padding: 5px;
+    padding-bottom: 10px;
+    border-radius: 0;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    background: #fff;
+}
+.box-content, .box-content2 .content{
+    background: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+}
+.content:hover{
+    padding: 2px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.content .img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    cursor: pointer;
+}
+.content-text{
+    padding: 15px 10px;
+}
+.content-text p{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.content-text h3{
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.content-text span{
+    text-decoration: line-through;
+    color: #999;
+}
+.absolute-ri{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: lightpink;
+    color: red;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+}
+.add-cart{
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.cell input{
+    width:  60px;
+}
+
+
+.bag{
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.cart1{
+    position: fixed;
+    z-index: 9999;
+    float: right;
+    top: 0;right: 0;
+    width: 360px;
+    min-height: 100%;
+    background: gray;
+    padding: 20px;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+    overflow: scroll;
+}
+
+.cart-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    gap:1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+.cart-image{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.details-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid var(--text-color);
+    outline-color:var(--main-color);
+    width: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cart-quantity:focus{
+    border: 1px solid var(--main-color);
+}
+.cart-remove{
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    display: flex;
+    padding: 12px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;cursor: pointer;
+}
+.btn-buy:hover{
+    background: var(--text-color);
+}
+#close-cart{
+    position: absolute;
+    top: 0;right: 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0.8rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+#close-cart:hover{
+    color: var(--main-color);
+}

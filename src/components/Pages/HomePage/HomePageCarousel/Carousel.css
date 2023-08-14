@@ -1,0 +1,132 @@
+.carousel-container{
+    display: block;
+}
+.card-wrapper1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+    
+}
+.card-wrapper1 .card{
+    border: none;
+    border-radius: 0;
+    box-sizing: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    width: 20rem !important;
+    height: fit-content;
+    background-color: #303032!important;
+    cursor: pointer;
+}
+.carousel-inner{
+    padding: 1rem;
+}
+.card-body{
+    display: flex;
+    justify-content: space-between;
+}
+.card-title{
+    color: white !important;
+}
+.card-text{
+    color: orange !important;
+}
+
+@media screen and (min-width: 577px) {
+    .card-wrapper{
+        display: flex;
+    }
+    .card{
+        margin: 0 0.5em;
+        width: calc(100/3);
+        background: #000;
+        
+    }
+    .image-wrapper{
+        height: 17rem !important;
+        margin: 0;
+        /*
+        display: flex;
+        align-items: center;
+        justify-content: center;*/
+    }
+}
+@media screen and (max-width: 576px) {
+    
+    .card-body{
+    
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .image-wrapper{
+        height: 15rem !important;
+        margin: 0;
+        /*
+        display: flex;
+        align-items: center;
+        justify-content: center;*/
+    }
+    
+}
+.image-wrapper .card-img-top{
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+.carousel-caption {
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+padding: 10px;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+}
+
+.carousel-nav {
+
+
+padding: 10px;
+color: white;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+display: block;
+right: 0;
+cursor: pointer;
+background-color: #fff !important;
+border-radius: 50%;
+width: 6vw !important;
+height: 6vh;
+top: 50% !important;
+transform: translateY(-50%);
+font-weight: bolder !important;
+}
+.carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-next .carousel-control-next-icon{
+    color: #000 !important;
+}
+
+.carousel-control-prev{
+    margin-right: 30px;
+}
+.carousel-control-prev span,
+.carousel-control-next span{
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #000;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+text-decoration: none;
+color: white !important;
+background-color: black !important;
+}
+
+
+
+
